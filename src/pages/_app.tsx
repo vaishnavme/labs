@@ -5,9 +5,11 @@ import { geistMono, geistSans, sourceSerif } from "@/styles/fonts";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div
-      className={`antialiased isolate ${sourceSerif.variable} ${geistSans.variable} ${geistMono.variable} font-sans`}
+      className={`${sourceSerif.variable} ${geistSans.variable} ${geistMono.variable} isolate font-sans text-justify`}
     >
-      <Component {...pageProps} />
+      <div className="mx-auto max-w-xl w-full space-y-16 px-4 md:px-8 pt-12 pb-6">
+        <Component {...pageProps} />
+      </div>
     </div>
   );
 }
