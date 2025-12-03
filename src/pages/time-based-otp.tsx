@@ -33,7 +33,7 @@ const TimeBasedOTP = () => {
     const totpURL = totp.generateTOTPURL({
       username,
       secret: secretKey,
-      issuer: "Demo-TOTP-App",
+      issuer: "Vaishnav's Lab: Time based OTP Demo",
     });
 
     const serverOTP = await totp.getCurrentOTP(secretKey);
