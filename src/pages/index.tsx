@@ -13,6 +13,11 @@ const Home = () => {
       <div className="space-y-10">
         <Header />
 
+        <p>
+          Welcome to Lab! This is a collection of experimental projects and
+          demos showcasing various technologies and concepts.
+        </p>
+
         <div>
           <ul>
             {demo_paths.map((demo) => (
