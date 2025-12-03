@@ -124,3 +124,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.link-hover {
+  @apply underline-offset-2 hover:underline hover:opacity-75;
+}
