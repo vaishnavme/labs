@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <div
       className={`${sourceSerif.variable} ${geistSans.variable} ${geistMono.variable} isolate font-sans text-justify`}
     >
-      <div className="mx-auto max-w-xl w-full space-y-16 px-4 md:px-8 pt-12 min-h-screen flex flex-col justify-between">
+      <div className="mx-auto max-w-xl w-full space-y-16 px-4 md:px-8 pt-12 min-h-screen flex flex-col justify-between gap-y-6">
         <div>
           <Component {...pageProps} />
         </div>
